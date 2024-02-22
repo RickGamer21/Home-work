@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class NPC : MonoBehaviour
 {
-    //Здоровье NPC
+    //Г‡Г¤Г®Г°Г®ГўГјГҐ NPC
     public int health = 5;
 
-    //Уровень NPC
+    //Г“Г°Г®ГўГҐГ­Гј NPC
     public int level = 1;
 
-    //Скорость NPC
+    //Г‘ГЄГ®Г°Г®Г±ГІГј NPC
     public float speed = 1.2f;
 
     Vector3 newPosition;
@@ -25,7 +25,7 @@ public class NPC : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        newPosition.x += speed * Time.deltaTime;
+        newPosition.z += speed * Time.deltaTime;
         transform.position = newPosition;
     }
 
